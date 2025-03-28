@@ -1,7 +1,6 @@
 import { ApiResponse, LoginCredentials, PaginationParams, Product, ProductFormData, RegisterCredentials, User, type ProductsResponse } from '../types';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3033';
-
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://in-meta-back.vercel.app';
 class ApiService {
   private getToken(): string | null {
     if (typeof window !== 'undefined') {
